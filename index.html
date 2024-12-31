@@ -37,13 +37,13 @@
             background-color: blueviolet;
         }
        
-        ul.nav-list li{
+        ul.nav-list a {
             margin-left: 1rem; 
             margin-right: 1.5rem; 
             margin-top: 0.5rem; 
             margin-bottom: 0.5rem;
         }
-        ul.nav-list li a{
+        .nav-list a{
             color: aliceblue;
             font-size: larger;
             color: aliceblue;
@@ -62,12 +62,33 @@
             justify-content: center;
             align-items: center;
         }
+        .col1 img {
+            width: 24rem;
+        }
         @media screen and (max-width: 768px){
             .column div {
-                width: 100%;
-                
+                width: 100%;                
             }
+        .nav-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            justify-self: center;
+            margin: auto;
+            background-color: blanchedalmond;
+            color: blue;
         }
+        
+        .nav-list a {
+            color: aliceblue;
+            font-size: larger;
+            color:beige;
+            text-decoration: none;
+            border: 2px double blueviolet;
+            width: fit-content;
+            background-color: blue;
+        }}
         footer{
             background-color: blue;
             color: aliceblue;
@@ -79,7 +100,7 @@
             height: auto;
         }
         video{
-            width: 100%;
+            width: 80rem;
             height: auto;
         }
     </style>
@@ -103,11 +124,11 @@
             </div>
             <div>
                 <ul class="nav-list">
-                    <li><ahref="#">HOME</a></li>
-                    <li ><ahref="#">DOWNLOADS</a></li>
-                    <li ><ahref="#">SERVICES</a></li>
-                    <li ><ahref="#">ABOUT US</a></li>
-                    <li ><ahref="#">CONTACT</a></li>
+                    <a href="#">HOME</a>
+                    <a href="#">DOWNLOADS</a>
+                    <a href="#">SERVICES</a>
+                   <a href="#">ABOUT US</a>
+                    <a href="#">CONTACT</a>
                 </ul>
             </div>
         </header>
