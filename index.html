@@ -25,6 +25,7 @@
         }
         .logo-name{
             display: flex;
+            border: none;
         }
         .logo img{
             width: 8rem;
@@ -66,7 +67,18 @@
             width: 24rem;
         }
         @media screen and (max-width: 768px){
-            .column div {
+        .logo-name{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        .logo{
+            margin: auto;
+            width: 5rem;
+            height: auto;
+
+        }
+        .column div {
                 width: 100%;                
             }
         .nav-list {
@@ -108,6 +120,9 @@
 <body>
     <div class="head">
         <header>
+            <div>
+                <p style="text-align: center; margin: 0; padding: 0; background-color:red; color: white;">"Engineering Excellence for a Sustainable Future."</p>
+            </div>
             <div class="logo-name" >
                 <div class="logo" >
                     <img src="logo copy.jpg" alt="civilpulse engineering logo" width="100%" height="100%">
@@ -162,7 +177,7 @@
         <footer style="justify-items:center;justify-content:last baseline; background-color: blueviolet;">
              <p> ©civilpulse engineering pvt.ltd.</p>
              <p>All Rights Reserved </p>
-             <p><a href="mailto:civilpulse.engineering@gmail.com"></a>contact@civilpulse.engineering@gmail.com </p>
+             <p>Contact@<a href="mailto:civilpulse.engineering@gmail.com">civilpulse.engineering@gmail.com</a> </p>
         </footer>
     </div>
 </body>
