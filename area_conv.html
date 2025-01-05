@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Area Converter</h1>
+    <p>sq.ft to anna</p>
+    <form action="" id="converter-form">
+        <input type="number" id="sqft" placeholder="Enter sq.ft">   
+        <button type="button" onclick="convertToAnna()"> Convert</button>
+    </form>
+    <div id="result"></div>
+    <script>
+        function convertToAnna() {
+            const sqft = parseFloat(document.getElementById('sqft').value);
+            const conversionFactor = 342.25; // 1 anna = 342.25 sq. ft
+            if (!isNaN(sqft) && sqft > 0) {
+                const anna = (sqft / conversionFactor).toFixed(2);
+                document.getElementById('result').textContent = `${sqft} sq. ft is equal to ${anna} anna.`;
+            }
+            else {
+                document.getElementById('result').textContent = 'Please enter a valid number greater than 0.';
+            }
+        }
+    </script>
+</body>
+</html>
