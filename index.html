@@ -10,6 +10,15 @@
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
+            background-color: darkcyan;
+        }
+        #slogan {
+            font-size: 1rem; 
+            text-align: center; 
+            margin: 0; 
+            padding: 0; 
+            background-color:brown; 
+            color: white;
         }
         .head{
             display: flex;
@@ -21,16 +30,22 @@
             color: black;
             justify-content: space-between;
             padding: 0; 
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+        .hero{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background: linear-gradient(45deg,blueviolet,white,rgb(231, 131, 214),darkcyan,darkcyan,darkcyan) ;
         }
         .logo-name{
             display: flex;
-            border: none;
             margin-bottom: -1px;
-            background-color:cadetblue;
         }
         .logo-name p {
             font-size: xx-large;
-            border: none;
             margin: 0;
             margin-top: 1rem;
         }
@@ -44,43 +59,46 @@
         .nav-list{
             list-style: none;
             display: flex;
-            justify-content: center;
-            background-color: darkcyan;
-            margin: -1px;
+            margin: 0px;
+            margin-right: 2rem;
+            height: 100%;
+            justify-content: space-around;
+            align-items: center;
         }
-        ul.nav-list a {
+        .nav-list a {
             margin-left: 1rem; 
-            margin-right: 1.5rem; 
             margin-top: 0.5rem; 
             margin-bottom: 0.5rem;
-        }
-        .nav-list a{
             color: aliceblue;
-            font-size: larger;
+            font-size: 1rem;
             color: aliceblue;
             text-decoration: none;
-        }   
-        .column{
+        }
+ 
+        .column {
             flex-direction: row;
             padding: 1rem;
-            background-image: url("columnbackground.webp");
+            background-image: url("/images/background3.webp");
+            margin-top: 6.5rem;
         }
         .col1{
             float: left;
-            width: 30%;
-            padding: 1rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
             background-color: aquamarine;
             background: rgba(169, 114, 114, 0.5);
             color: white;
         }
-        .col1 img {
-            width: 16rem;
+        .column img {
+            width: 50rem;
         }
+        
         @media screen and (max-width: 768px){
+            header {
+                position: relative;
+                background-image: url(images/hero.webp);
+            }
+            .hero{
+                display: block;
+            }
             .logo-name{
                 display: flex;
                 /* flex-direction: column; */
@@ -103,52 +121,49 @@
                 height: auto;
                 /* border: 2px double black; */
             }
+            .column{
+                margin-top: 0 ;
+            
+            }
+            
+            .column img {
+            width: 20rem;
+        }
             .column div {
                     width: 100%;                
                 }
             .nav{
                 position: relative;
                 display: flex;
-                background-color: darkcyan;
+                /* background: linear-gradient(45deg,white,blueviolet) ; */
+                /* background-color: darkcyan; */
                 margin: -1px;
+                width: 25%;
             }
-            
             .nav p {
+                display:inline;            
                 position: relative;
-                display: flex;
                 margin: -1px;
                 width: fit-content;
             }
             .nav-list {
-                display: none;
-                list-style: none;
-                margin-left: 0;
-                padding-left: 0;
-                flex-direction: column;
-                background-color: blanchedalmond;
-                color: darkcyan;
+                display: none;  
+            }
+            .nav-list a {
+                background-color: darkcyan;
             }
             .nav:hover .nav-list{
                 display: flex;
+                flex-direction: column;
                 position: absolute;
                 background-color: transparent;
-                top: 0;
-                left: 0;
-                right: 0;
                 z-index: 1;
-                color: aliceblue;
-            }
-            .nav-list a {
-                color: aliceblue;
                 font-size: larger;
-                color:beige;
-                text-decoration: none;
-                border: 2px double solid blueviolet;
-                width: fit-content;
-                background-color: darkcyan;
-                height: fit-content;
+                color: aliceblue;
+                margin-left: 0;
+                padding-left: 0;
+                width: 25%;
             }
-        
             video{
                 width: 12rem;
                 height: auto;
@@ -174,29 +189,32 @@
     <div class="head">
         <header>
             <div>
-                <p style="font-size: 1rem; text-align: center; margin: 0; padding: 0; background-color:darkcyan; color: white;">"Engineering Excellence for a Sustainable Future."</p>
+                <p id="slogan">"Engineering Excellence for a Sustainable Future."</p>
             </div>
-            <div class="logo-name" >
-                <div class="logo" >
-                    <img src="images/photoshoppng.png" alt="civilpulse engineering logo" width="100%" height="100%">
+            <div class="hero">
+                <div class="logo-name" >
+                    <div class="logo" >
+                        <img src="images/photoshoppng.png" alt="civilpulse engineering logo" width="100%" height="100%">
+                    </div>
+                    <div style="margin-left: 2rem;">
+                        <p >
+                            CIVILPULSE ENGINEERING
+                        </p>
+                    </div>
                 </div>
-                <div style="margin-left: 2rem;">
-                    <p >
-                        CIVILPULSE ENGINEERING
+                <div class="nav">
+                    <p> 
+                        <img src="images/icons8-stack-96.png"style="width: 1.5rem;" alt="Explore">
                     </p>
+                    <ul class="nav-list">
+                        <!-- <a href="#">HOME</a> -->
+                        <a href="#">SERVICES</a>
+                        <a href="#">DOWNLOADS</a>                        
+                        <a href="about_us.html">ABOUT&nbsp;US</a>
+                        <a href="#">CONTACT</a>
+                        <a href="login.html">LOGIN</a>
+                    </ul>
                 </div>
-            </div>
-            <div class="nav">
-                <p>HOME</p>
-                <ul class="nav-list">
-                    <a href="#">HOME</a>
-                    <a href="#">DOWNLOADS</a>
-                    <a href="#">SERVICES</a>
-                   <a href="about_us.html">ABOUT US</a>
-                    <a href="#">CONTACT</a>
-                    <a href="login.html">LOGIN</a>
-                    <a href="#"></a>
-                </ul>
             </div>
         </header>
             <div class="column">
@@ -207,14 +225,14 @@
                     </p>
                     <img src="images/background1 (1).webp" alt="">
                 </div>
-                <div class="col1">
+                <div class="col2">
                     <img src="images/columnbackground.webp" alt="">
                     <p style="text-align:left; font-style: italic;">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, optio inventore quos explicabo numquam veniam similique sit assumenda eos voluptatibus perferendis sed incidunt cum minima atque illo natus consectetur! Debitis.
                     </p>
                     <img src="images/columnbackground.webp" alt="">
                 </div>
-                <div class="col1">
+                <div class="col3">
                     <img src="images/photoshoppng.png" alt="" width="50%" style="display: block; margin: auto;">
                     <p style="text-align:left; font-style:  italic;">
                         col3<br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ex et qui accusantium rem error sapiente sunt exercitationem optio necessitatibus voluptates vitae, doloribus, alias rerum voluptate quia officia illum quod.
@@ -230,9 +248,6 @@
              <p> ©civilpulse engineering pvt.ltd.</p>
              <p>All Rights Reserved </p>
              <p>Contact@<a href="mailto:civilpulse.engineering@gmail.com">civilpulse.engineering@gmail.com</a> </p>
-            <div>
-                <iframe src="area_conv.html" frameborder="2px" width="50%" height="auto"></iframe>
-            </div>
         </footer>
     </div>
 </body>
