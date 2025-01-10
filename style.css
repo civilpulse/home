@@ -66,6 +66,13 @@ header{
     color: aliceblue;
     text-decoration: none;
 }
+#none {
+    display: block;
+    background-color: blue;
+    margin: -1px;
+    text-align: center;
+    font-size: xx-small;
+}
 
 .hero{
     display: flex;
