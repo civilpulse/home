@@ -104,13 +104,61 @@
             color: black;
             background-color: rgba(255,255,255,0.75);
         }
- 
         
-        
+
+        .plan-design{
+           position: relative;
+           margin: -1px;;
+        }
+        .architecture {
+            display: block;
+            position: relative;
+        }
+        .analysis {
+            display: block;
+            position: relative;
+        }
+        .estamate {
+            display: block;
+            position: relative;
+            padding-top: 2rem;
+        }
+        .supervise {
+            display: block;
+            position: relative;
+        }
+        .services {
+            background: linear-gradient(45deg,blue,darkcyan,white,rgb(231, 131, 214),blueviolet)
+        }
+        .services h1 {
+            margin-top: 2rem;
+            font-size: xx-large;
+        }
+        .services h2 {
+            margin-top: 2rem;
+            margin-left: 0.5rem;
+            font: x-large;
+            font-style: italic;
+            font-weight: bolder;
+            text-align: center;
+        }
+        .services img {
+            margin: -1px;
+            width: 100%;    
+        }
+        .services p{
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            color: black;
+            font-size: xx-large;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            text-align: right; 
+            background-color: rgba(255, 255, 255, 0.7);
+            margin-right: 1rem;
+        }
         @media screen and (max-width: 768px){
-            header {
-                /* position: relative; */
-            }
             .head {
                 display: block;
             }
@@ -136,7 +184,6 @@
                 height: auto;
                 /* border: 2px double black; */
             }
-           
             .nav{
                 position: relative;
                 display: flex;
@@ -219,129 +266,17 @@
             .work-list h3 {
                 display: none;
             }
-            
+            .services p{
+              font-size: large;
+              top: 20%;
+              left: 35%;
+            }            
         }
         footer{
             background-color: darkcyan;
             color: aliceblue;
             padding: 1rem;
             text-align: center;
-        }
-        img{
-            width: 18rem;
-            height: auto;
-        }
-        video{
-            width: 18rem;
-            height: auto;
-        }
-        .service-he{
-            background: linear-gradient(45deg,blue,darkcyan,white,rgb(231, 131, 214),blueviolet);
-            margin: -1px;
-        }
-        .service-he h1 {
-            margin: 0;
-            font-size: larger;
-        }
-        .service-he p {
-            margin: 0;
-            font-size: smaller;
-        }
-        .plan-design{
-           position: relative;
-           margin: -1px;;
-        }
-        .plan-design img{
-            display: inline-block;
-            width: 100%;
-            margin: 0;
-        }
-        .plan-design p {
-            position: absolute;
-            top: 10%;
-            left: 20%;
-            color: black;
-            font-size: large;
-            font-weight: bold;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-            text-align: right; 
-            background-color: rgba(255, 255, 255, 0.7);
-        }
-        .plan-design h3 {
-            margin: -1px;
-        }
-        .architecture {
-            display: block;
-            position: relative;
-        }
-        .architecture h2 {
-            margin: -1px;
-            background: linear-gradient(45deg,blue,darkcyan,white,rgb(231, 131, 214),blueviolet)
-        }
-        .architecture img {
-            margin: -1px;
-            width: 100%;    
-        }
-        .architecture p{
-            position: absolute;
-            top: 10%;
-            left: 20%;
-            color: black;
-            font-size: large;
-            font-weight: bold;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-            text-align: right; 
-            background-color: rgba(255, 255, 255, 0.7);
-            margin-right: 1rem;
-        }
-        .analysis {
-            display: block;
-            position: relative;
-        }
-        .analysis h2 {
-            margin: -1px;
-            background: linear-gradient(45deg,blue,darkcyan,white,rgb(231, 131, 214),blueviolet)
-        }
-        .analysis img {
-            margin: -1px;
-            width: 100%;    
-        }
-        .analysis p{
-            position: absolute;
-            top: 10%;
-            left: 20%;
-            color: black;
-            font-size: large;
-            font-weight: bold;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-            text-align: right; 
-            background-color: rgba(255, 255, 255, 0.7);
-            margin-right: 1rem;
-        }
-
-        .estamate {
-            display: block;
-            position: relative;
-        }
-        .estamate h2 {
-            margin: -1px;
-            background: linear-gradient(45deg,blue,darkcyan,white,rgb(231, 131, 214),blueviolet)
-        }
-        .estamate img {
-            margin: -1px;
-            width: 100%;    
-        }
-        .estamate p{
-            position: absolute;
-            top: 10%;
-            left: 20%;
-            color: black;
-            font-size: large;
-            font-weight: bold;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-            text-align: right; 
-            background-color: rgba(255, 255, 255, 0.7);
-            margin-right: 1rem;
         }
 
     </style>
@@ -421,12 +356,10 @@
     <div class="services">
         <div class="service-he">
             <h1> Our Services:</h1>
-            <p> "From Vision to Reality – Expert Solutions for Your Projects"</p>
-            <h3>Planning and Design:</h3>
+            <span style=" font-size: large;">"From Vision to Reality – Expert Solutions for Your Projects"</span>
         </div>
-
-        <div class="plan-design">
-            
+        <div class="plan-design"> 
+            <h2>Planning and Design:</h2>           
             <img src="images/planingDesign.webp" alt="" width="100%" height="auto">
             <p>At CivilPulse Engineering Pvt Ltd, we prioritize a systematic and innovative approach to planning and design, ensuring every project reflects our commitment to excellence and sustainability.</p>
         </div>
@@ -438,18 +371,18 @@
         <div class="analysis">
             <h2>Structural Analysis and Drawings</h2>
             <img src="images/analysis-img.webp" alt="">            
-            <p> ""Safety and stability are at the core of our designs. Our structural experts analyze and draft solutions that ensure your building stands the test of time."</p>
+            <p>"Safety and stability are at the core of our designs. Our structural experts analyze and draft solutions that ensure your building stands the test of time."</p>
         </div>
-      
         <div class="estamate">
             <h2>Cost Estimation and Valuation</h2>
             <img src="images/estimation.webp" alt="">            
             <p> "Budgeting made easy. With our accurate cost estimation and property valuation services, you can make informed financial decisions with confidence."</p>
         </div>
-        
-
-
-        
+        <div class="supervise">
+            <h2>Project Supervision</h2>
+            <img src="images/supervision.webp" alt="">            
+            <p>"From groundbreaking to completion, our dedicated supervisors ensure every detail aligns with the design and quality standards you expect."</p>
+        </div>
     </div>
     <footer>
         <p>let us know about you <a href="form.html">Fill The Form</a></p>
