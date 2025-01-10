@@ -83,6 +83,7 @@
             background-size: cover;
             background-position: center;
             color: whitesmoke;
+            margin-left: 0.5rem;
         }
         .hero-slogan {
             display: none;
@@ -152,7 +153,6 @@
             }
             .column{
                 margin-top: 0 ;
-            
             }
             
             .column img {
@@ -199,7 +199,7 @@
             }
             .hero {
                 display: flex;
-                flex-direction: row;
+                flex-direction: column;
                 margin-top: 0;
             }
             .hero-slogan {
@@ -211,6 +211,12 @@
                 font-size: small;
                 margin: auto;
             }
+            .hero-sl-wo{
+                display: flex;
+                flex-direction: row;
+                font-size:x-small;
+                margin: 0.5rem;
+            }
             .work{
             display: flex;
             flex-direction: column ;
@@ -219,10 +225,20 @@
             }
             .work h2 {
             margin: 1rem;
-            font-size: small;
             background-color: rgba(0,0,0,0.25);
+            font-size: x-large;
             }
-            .work-list {
+            .work-list{
+                align-items: flex-start;
+                margin-left: 1rem;
+                font-size: x-small;
+            }
+            .work-list h2 {
+                margin: 0.25rem;
+
+
+            }
+            .work-list h3 {
                 display: none;
             }
             
@@ -275,18 +291,20 @@
         </div>
     </header>
     <div class="hero">
-        <h3 class="hero-slogan" >"Shaping Spaces, Strengthening Foundations: Your Partner in Innovation and Precision Engineering."</h3>
-        <div class="work">
-            <h2>DRAWING</h2>
-            <h2>3D DESIGN</h2>
-            <h2>ANALYSIS</h2>
-            <h2>ESTIMATION</h2>
-            <h2>SUPERVISION</h2>
-            <h2>VALUATION</h2>
+        <div class="hero-sl-wo">
+            <h3 class="hero-slogan" >"Shaping Spaces, Strengthening Foundations: Your Partner in Innovation and Precision Engineering."</h3>
+            <div class="work">
+                <h2>DRAWING</h2>
+                <h2>3D DESIGN</h2>
+                <h2>ANALYSIS</h2>
+                <h2>ESTIMATION</h2>
+                <h2>SUPERVISION</h2>
+                <h2>VALUATION</h2>
+            </div>
         </div>
         
         <div class="work-list">   
-            <h3 style="font-style: italic; font-size: x-large;font-weight: lighter;background-color:rgba(255, 255, 255, 0.991);color:blue;">"Shaping Spaces, Strengthening Foundations: Your Partner in Innovation and Precision Engineering."</h3>
+            <h3 style="font-style: italic; align-self: center;font-size: x-large; font-weight: lighter;background-color:rgba(255, 255, 255, 0.991);color:blue;">"Shaping Spaces, Strengthening Foundations: Your Partner in Innovation and Precision Engineering."</h3>
             <h2>At CivilPulse Engineering, we provide:</h2>                    
             <h2>Innovative Architectural Designs</h2>
             <!-- <p>Crafting functional, aesthetic, and modern spaces that inspire.</p> -->
