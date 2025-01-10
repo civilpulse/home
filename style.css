@@ -1,39 +1,278 @@
-/* .contener {
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: darkcyan;
+}
+#slogan {
+    font-size: 1rem; 
+    text-align: center; 
+    margin: 0; 
+    padding: 0; 
+    background-color:brown; 
+    color: white;
+}
+.page{
+    display: flex;
+    flex-direction: column;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    justify-content: space-between;
+    padding: 0; 
+    position: fixed;
     width: 100%;
-    height: 150px;
-    border: 5px double black;
-    flex-wrap: wrap;
+    z-index: 1000;
 }
-.logo   {
-    float: left;
-    width: 20%;
-}
-
-.name {
-    height: 5%;
-    float: left;
-    width: 80%;
-    word-break: break-word;
-    background-color: olive;
-    margin: 0.1em;
-    padding: 0.1em;
-    height: 9em;
-}
-
-.menu {
+.head {
     display: flex;
-    background-color: blue;
-    list-style-type: none;
-    align-content: space-between;
-    gap: 2px; 
+    flex-direction: row;
+    justify-content: space-between;
+    background: linear-gradient(45deg,blueviolet,white,rgb(231, 131, 214),darkcyan,darkcyan,darkcyan) ;
 }
-
-.menu {
+.logo-name{
     display: flex;
-    background-color: brown;
-
+    margin-bottom: -1px;
 }
-.menu div {
-    margin: 10px;
-    text-wrap:initial ;
-}*/
+.logo-name p {
+    font-size: xx-large;
+    margin: 0;
+    margin-top: 1rem;
+}
+.logo img{
+    width: 4rem;
+    height: auto;
+}
+.nav p {
+    display: none;
+}
+.nav-list{
+    list-style: none;
+    display: flex;
+    margin: 0px;
+    margin-right: 2rem;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-list a {
+    margin-left: 1rem; 
+    margin-top: 0.5rem; 
+    margin-bottom: 0.5rem;
+    color: aliceblue;
+    font-size: 1rem;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    margin-top: 6.5rem;
+    background-image: url(images/heroBackground.webp);
+    background-size: cover;
+    background-position: center;
+    color: whitesmoke;
+    margin-left: 0.5rem;
+}
+.hero-slogan {
+    display: none;
+}
+.work{
+    display: flex;
+    justify-content:space-around ;
+    background-color: rgb(0, 0, 0, 0.25);
+}
+.work-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 3rem;
+}
+
+.work-list h2 {
+    color: black;
+    background-color: rgba(255,255,255,0.75);
+}
+.plan-design{
+   position: relative;
+   margin: -1px;;
+}
+.architecture {
+    display: block;
+    position: relative;
+}
+.analysis {
+    display: block;
+    position: relative;
+}
+.estamate {
+    display: block;
+    position: relative;
+    padding-top: 2rem;
+}
+.supervise {
+    display: block;
+    position: relative;
+}
+.services {
+    background: linear-gradient(45deg,blue,darkcyan,white,rgb(231, 131, 214),blueviolet)
+}
+.services h1 {
+    margin-top: 2rem;
+    font-size: xx-large;
+}
+.services h2 {
+    margin-top: 2rem;
+    margin-left: 0.5rem;
+    font: x-large;
+    font-style: italic;
+    font-weight: bolder;
+    text-align: center;
+}
+.services img {
+    margin: -1px;
+    width: 100%;    
+}
+.services p{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    color: black;
+    font-size: xx-large;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    text-align: right; 
+    background-color: rgba(255, 255, 255, 0.7);
+    margin-right: 1rem;
+}
+@media screen and (max-width: 768px){
+    .head {
+        display: block;
+    }
+    .logo-name{
+        display: flex;
+        /* flex-direction: column; */
+        text-align: center;
+        margin: -1px;
+        column-gap: 0;
+        row-gap: 0;               
+    }
+    .logo-name p {
+        font-size: x-large;
+        margin: -1rem;
+        padding: 0;
+        margin-top: 1rem; 
+        /* border: 2px double black; */
+    }
+    .logo{
+        margin: -1.5px;
+        margin-left: 1rem;
+        width: 4rem;
+        height: auto;
+        /* border: 2px double black; */
+    }
+    .nav{
+        position: relative;
+        display: flex;
+        /* background: linear-gradient(45deg,white,blueviolet) ; */
+        /* background-color: darkcyan; */
+        margin-left: 1rem;
+        width: 25%;
+    }
+    .nav p {
+        display:inline;            
+        position: relative;
+        margin: -1px;
+        width: fit-content;
+    }
+    .nav-list {
+        display: none;  
+    }
+    .nav-list a {
+        background-color: darkcyan;
+    }
+    .nav:hover .nav-list{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        background-color: transparent;
+        z-index: 1;
+        font-size: larger;
+        color: aliceblue;
+        margin-left: 0.5rem;
+        margin-top: 0.5rem;
+        padding-left: 0;
+        width: 25%;
+    }
+    video{
+        width: 12rem;
+        height: auto;
+    }
+    .hero {
+        display: flex;
+        flex-direction: column;
+        margin-top: 6.5rem;
+    }
+    .hero-slogan {
+        display: block;
+        background-color:rgba(0,0,0,0.25) ;
+        height: 100%;
+        font-style: italic;
+        font-weight:bold;
+        font-size: large;
+        margin: auto;
+    }
+    .hero-sl-wo{
+        display: flex;
+        flex-direction: row;
+        font-size:x-small;
+        margin: 0.5rem;
+    }
+    .work{
+    display: flex;
+    flex-direction: column ;
+    align-items: end;
+    margin: -1px;
+    }
+    .work h2 {
+    margin: 1rem;
+    background-color: rgba(0,0,0,0.25);
+    font-size: x-large;
+    }
+    .work-list{
+        align-items: flex-start;
+        margin-left: 1rem;
+        font-size: x-small;
+    }
+    .work-list h2 {
+        margin: 0.25rem;
+
+
+    }
+    .work-list h3 {
+        display: none;
+    }
+    .services h1 {
+        margin-top: 1rem;
+        font-size: xx-large;
+    }
+    .services h2 {
+        margin-top: 1rem;
+        text-align: left;
+    }
+    .services p{
+      font-size: large;
+      top: 20%;
+      left: 35%;
+    }            
+}
+footer{
+    background-color: darkcyan;
+    color: aliceblue;
+    padding: 1rem;
+    text-align: center;
+}
