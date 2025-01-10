@@ -105,22 +105,7 @@
             background-color: rgba(255,255,255,0.75);
         }
  
-        .column {
-            flex-direction: row;
-            padding: 1rem;
-            background-image: url(images/hero.webp);
-            background-position: center;
-            margin-top: 6.5rem;
-        }
-        .col1{
-            float: left;
-            background-color: aquamarine;
-            background: rgba(169, 114, 114, 0.5);
-            color: white;
-        }
-        .column img {
-            width: 50rem;
-        }
+        
         
         @media screen and (max-width: 768px){
             header {
@@ -138,7 +123,7 @@
                 row-gap: 0;               
             }
             .logo-name p {
-                font-size: large;
+                font-size: x-large;
                 margin: -1rem;
                 padding: 0;
                 margin-top: 1rem; 
@@ -151,16 +136,7 @@
                 height: auto;
                 /* border: 2px double black; */
             }
-            .column{
-                margin-top: 0 ;
-            }
-            
-            .column img {
-            width: 20rem;
-            }
-            .column div {
-                width: 100%;                
-            }
+           
             .nav{
                 position: relative;
                 display: flex;
@@ -259,6 +235,115 @@
             width: 18rem;
             height: auto;
         }
+        .service-he{
+            background: linear-gradient(45deg,blue,darkcyan,white,rgb(231, 131, 214),blueviolet);
+            margin: -1px;
+        }
+        .service-he h1 {
+            margin: 0;
+            font-size: larger;
+        }
+        .service-he p {
+            margin: 0;
+            font-size: smaller;
+        }
+        .plan-design{
+           position: relative;
+           margin: -1px;;
+        }
+        .plan-design img{
+            display: inline-block;
+            width: 100%;
+            margin: 0;
+        }
+        .plan-design p {
+            position: absolute;
+            top: 10%;
+            left: 20%;
+            color: black;
+            font-size: large;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            text-align: right; 
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+        .plan-design h3 {
+            margin: -1px;
+        }
+        .architecture {
+            display: block;
+            position: relative;
+        }
+        .architecture h2 {
+            margin: -1px;
+            background: linear-gradient(45deg,blue,darkcyan,white,rgb(231, 131, 214),blueviolet)
+        }
+        .architecture img {
+            margin: -1px;
+            width: 100%;    
+        }
+        .architecture p{
+            position: absolute;
+            top: 10%;
+            left: 20%;
+            color: black;
+            font-size: large;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            text-align: right; 
+            background-color: rgba(255, 255, 255, 0.7);
+            margin-right: 1rem;
+        }
+        .analysis {
+            display: block;
+            position: relative;
+        }
+        .analysis h2 {
+            margin: -1px;
+            background: linear-gradient(45deg,blue,darkcyan,white,rgb(231, 131, 214),blueviolet)
+        }
+        .analysis img {
+            margin: -1px;
+            width: 100%;    
+        }
+        .analysis p{
+            position: absolute;
+            top: 10%;
+            left: 20%;
+            color: black;
+            font-size: large;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            text-align: right; 
+            background-color: rgba(255, 255, 255, 0.7);
+            margin-right: 1rem;
+        }
+
+        .estamate {
+            display: block;
+            position: relative;
+        }
+        .estamate h2 {
+            margin: -1px;
+            background: linear-gradient(45deg,blue,darkcyan,white,rgb(231, 131, 214),blueviolet)
+        }
+        .estamate img {
+            margin: -1px;
+            width: 100%;    
+        }
+        .estamate p{
+            position: absolute;
+            top: 10%;
+            left: 20%;
+            color: black;
+            font-size: large;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            text-align: right; 
+            background-color: rgba(255, 255, 255, 0.7);
+            margin-right: 1rem;
+        }
+
     </style>
 </head>
 <body class="page">   
@@ -333,32 +418,39 @@
             <!-- <p>Delivering accurate data for informed and confident decisions.</p> -->               
         </div>    
     </div>
-        <div class="column">
-            <div class="col1">
-                <img src="images/deformetab.bmp" alt="gif">
-                <p style="text-align:left; font-style: italic;">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora nulla quis laboriosam. Recusandae sapiente aspernatur optio possimus in, quibusdam laudantium rem, fugiat quidem quis voluptatum nobis architecto sunt quia facere!
-                </p>
-                <img src="images/background1 (1).webp" alt="">
-            </div>
-            <div class="col2">
-                <img src="images/columnbackground.webp" alt="">
-                <p style="text-align:left; font-style: italic;">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, optio inventore quos explicabo numquam veniam similique sit assumenda eos voluptatibus perferendis sed incidunt cum minima atque illo natus consectetur! Debitis.
-                </p>
-                <img src="images/columnbackground.webp" alt="">
-            </div>
-            <div class="col3">
-                <img src="images/photoshoppng.png" alt="" width="50%" style="display: block; margin: auto;">
-                <p style="text-align:left; font-style:  italic;">
-                    col3<br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ex et qui accusantium rem error sapiente sunt exercitationem optio necessitatibus voluptates vitae, doloribus, alias rerum voluptate quia officia illum quod.
-                </p>
-                <img src="images/background1 (2).webp" alt="">
-            </div>
-            <div>
-                <video src="video/video.mp4" width="1080px" controls style="display: block; margin: auto;">vid</video>
-            </div>
+    <div class="services">
+        <div class="service-he">
+            <h1> Our Services:</h1>
+            <p> "From Vision to Reality – Expert Solutions for Your Projects"</p>
+            <h3>Planning and Design:</h3>
         </div>
+
+        <div class="plan-design">
+            
+            <img src="images/planingDesign.webp" alt="" width="100%" height="auto">
+            <p>At CivilPulse Engineering Pvt Ltd, we prioritize a systematic and innovative approach to planning and design, ensuring every project reflects our commitment to excellence and sustainability.</p>
+        </div>
+        <div class="architecture">
+            <h2>Architectural Drawings</h2>
+            <img src="images/architecture.webp" alt="">            
+            <p> "Precision and creativity come together in our detailed drawings, delivering clear and actionable plans for residential and commercial structures."</p>
+        </div>
+        <div class="analysis">
+            <h2>Structural Analysis and Drawings</h2>
+            <img src="images/analysis-img.webp" alt="">            
+            <p> ""Safety and stability are at the core of our designs. Our structural experts analyze and draft solutions that ensure your building stands the test of time."</p>
+        </div>
+      
+        <div class="estamate">
+            <h2>Cost Estimation and Valuation</h2>
+            <img src="images/estimation.webp" alt="">            
+            <p> "Budgeting made easy. With our accurate cost estimation and property valuation services, you can make informed financial decisions with confidence."</p>
+        </div>
+        
+
+
+        
+    </div>
     <footer>
         <p>let us know about you <a href="form.html">Fill The Form</a></p>
             <p> ©civilpulse engineering pvt.ltd.</p>
